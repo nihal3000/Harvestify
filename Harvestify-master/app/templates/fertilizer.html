@@ -1,28 +1,32 @@
 {% extends 'layout.html' %} {% block body %}
 
-<style>
-  html body {
-    background-color: rgb(206, 206, 228);
-  }
+<style> 
+body{
+  background-image: url("../static/images/f2.jpg");
+  background-size: cover;
+  background-position: top;
+}
 </style>
 <!--Form Section-->
+
 <br /><br />
-<h2 style="text-align: center; margin: 0px; color: black">
-  <b>Get informed advice on fertilizer based on soil</b>
+<h2 style="text-align: center; margin: 30px; color:rgb(51, 12, 12);font-weight: bolder; font-size: 50px;">
+  <b><i>Get informed advice on fertilizer based on soil</i></b>
 </h2>
 <br />
 
 <div
   style="
     width: 350px;
-    height: 40rem;
+    height: fit-content;
     margin: 0px auto;
     color: black;
     border-radius: 25px;
     padding: 10px 10px;
+    background-color: rgba(206, 228, 220, 0.808);
   "
 >
-  <form method="POST" action="{{ url_for('fert_recommend') }}">
+  <form method="POST" action="{{ url_for('fert_recommend') }}" style="color: black; font-weight: bolder;">
     <div class="form-group">
       <label for="Nitrogen" style="font-size: 17px"><b>Nitrogen</b></label>
       <input
@@ -130,4 +134,5 @@
     </div>
   </form>
 </div>
+
 {% endblock %}

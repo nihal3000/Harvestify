@@ -3,7 +3,10 @@
 
 <style>
   html body {
-    background-color: rgb(206, 206, 228);
+    background-image: url("../static/images/s4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 </style>
 <br /><br />
@@ -15,27 +18,27 @@
 
 <div style="
     width: 350px;
-    height: 50rem;
+    height: fit-content;
     margin: 0px auto;
     color: black;
     border-radius: 25px;
     padding: 10px 10px;
     font-weight: bold;
+    background-color: rgba(206, 228, 220, 0.808);
+
   ">
 
   
 
 
-  <form class="form-signin" method=post enctype=multipart/form-data>
+  <form class="form-signin" method=post enctype=multipart/form-data >
 
     <h2 class="h4 mb-3 font-weight-normal"><b>Please Upload The Image</b></h2>
     <input type="file" name="file" class="form-control-file" id="inputfile" onchange="preview_image(event)" style="font-weight: bold;">
     <br>
     <br>
     <img id="output-image" class="rounded mx-auto d-block" />
-    <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-weight: bold;">Predict</button>
-
-
+    <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-weight: bold;margin-top: 10px;">Predict</button>
   </form>
 </div>
 

@@ -13,7 +13,7 @@
 </style>
 <!--Form Section-->
 <br /><br />
-<h2 style="text-align: center; margin: 0px; color: black">
+<h2 style="text-align: center; margin: 0px; color: black;font-weight: bolder;">
   <b>Find out the most suitable crop to grow in your farm</b>
 </h2>
 <br />
@@ -21,14 +21,15 @@
 <div
   style="
     width: 350px;
-    height: 50rem;
+    height: fit-content;
     margin: 0px auto;
     color: black;
     border-radius: 25px;
     padding: 10px 10px;
+    background-color: rgba(206, 228, 220, 0.808);
   "
 >
-  <form method="POST" action="{{ url_for('crop_prediction') }}">
+  <form method="POST" action="{{ url_for('crop_prediction') }}" style=" color: rgb(44, 10, 10);font-weight: 900;">
     <div class="form-group">
       <label for="Nitrogen" style="font-size: 17px"><b>Nitrogen</b></label>
       <input
